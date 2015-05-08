@@ -25,8 +25,8 @@ namespace HBMonitor
         [Setting]
         [DefaultValue("")]
         [Category("Authentication")]
-        [DisplayName("Auth secret")]
-        [Description("Your AuthSecret. Visit hbmonitor.com to get one!")]
+        [DisplayName("Communication Code")]
+        [Description("Your Communication Code, it identifies your character anonymously. Visit hbmonitor.pkj.no to get one!")]
         public string AuthSecret { get; set; }
 
 
