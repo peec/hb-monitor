@@ -39,7 +39,7 @@ namespace HBMonitor
 
             using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {
-                string json = "{\"auth_secret\": " + str(status.AuthSecret) + ", \"auth_secret\": " + tf(status.IsRunning) + ", \"goal_text\": " + str(status.GoalText) + ", \"status_text\": " + str(status.StatusText) + "}";
+                string json = "{\"auth_secret\": " + str(status.AuthSecret) + ", \"is_running\": " + tf(status.IsRunning) + ", \"goal_text\": " + str(status.GoalText) + ", \"status_text\": " + str(status.StatusText) + "}";
 
                 streamWriter.Write(json);
             }
